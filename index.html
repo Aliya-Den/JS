@@ -10,6 +10,30 @@
 <body>
     <h1>Hello World</h1>
 
+    <!-- начало блока Чат-->
+    <div class="form_wrapper">
+		<div class="form">
+			<h2>ваш комментарий</h2>
+			<input type="text" id="name" class="input" placeholder="Введите ваше имя"/>
+			<div class="name">
+			<p>показывать Ваше имя?</p>
+				<label for="name__yes">Да</label>
+				<input type="radio" id="name_yes" name="nameCheckbox" value="name_yes" checked />
+				<label for="name__no">Нет</label>
+				<input type="radio" id="name_no" name="nameCheckbox" value="name_no"/>
+			</div>
+			<input type="url" class="input" id="avatar" value="" placeholder="Введите ссылку на аватар" />
+			<textarea id="message" class="input message" placeholder="Введите ваше сообщение"></textarea>
+			<button id="button" class="button">Добавить комментарий</button>
+		
+		</div>
+		<div class="comments" id="comments">
+			<h2>Онлайн чат &#128172;</h2>
+			<div class="comment">
+			</div>
+		</div>
+     <!-- конец блока Чат-->
+
 <script src="/index.js"></script>
 </body>
 </html>

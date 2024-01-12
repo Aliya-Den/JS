@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
 body {
   color: white;
@@ -17,3 +18,127 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
 }
+
+/* начало блока ЧАТ*/
+.h2 {
+  padding-bottom: 5%;
+}
+
+.form_wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  gap: 1rem;
+  padding: 1vh 3vw;
+  margin: 0 auto;
+}
+
+.message {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  border-color: blue;
+  border-style: dashed;
+}
+
+.input {
+  padding: 1vw;
+  max-width: 70%;
+  border-color: blue;
+  border-style: dashed;
+}
+
+.button {
+  background-color: yellow;
+  max-width: 40%;
+  max-height: 70%;
+  padding: 2vh 2vw;
+  color: black;
+  font-size: small;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55vw;
+  gap: 1vh;
+  padding: 1vh 3vw;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment__date {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  word-wrap: break-word;
+  font-size: xx-small;
+}
+
+.comment {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment__avatar {
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-column: 1;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.comment__name {
+  font-weight: bold;
+  padding: 0;
+  width: 100%;
+  color: cornflowerblue;
+  grid-column: 1;
+  grid-row: 3;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.comment__text {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-template-rows: 1/4;
+  text-align: left;
+  font-weight: 500;
+  padding-left: 1%;
+  font-size: large;
+  color: yellow;
+}
+
+/*конец блока ЧАТ*/
