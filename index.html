@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KinoArea</title>
-     <link rel="stylesheet" href="./assets/styles/css/normalize.css" />
-  <link rel="stylesheet" href="style/css/main.css" />
+     <link rel="stylesheet" href="/style/css/normalize.css" />
+  <link rel="stylesheet" href="/style/css/main.css" />
 </head>
 <body>
-    <h1>Hello World</h1>
-
+	<div class="container"></div>
+	  <!-- переключатель темы-->
+  <button id="themeToggle">Сменить тему</button>
+  
     <!-- начало блока Чат-->
+	<div class="chat">	
+	<h2>Чат любителей хорошего кино</h2>
     <div class="form_wrapper">
 		<div class="form">
-			<h2>ваш комментарий</h2>
-			<input type="text" id="name" class="input" placeholder="Введите ваше имя"/>
+			<input type="text" id="name" max="8" class="input" placeholder="Введите ваше имя"/>
 			<div class="name">
 			<p>показывать Ваше имя?</p>
 				<label for="name__yes">Да</label>
@@ -23,14 +26,13 @@
 				<input type="radio" id="name_no" name="nameCheckbox" value="name_no"/>
 			</div>
 			<input type="url" class="input" id="avatar" value="" placeholder="Введите ссылку на аватар" />
-			<textarea id="message" class="input message" placeholder="Введите ваше сообщение"></textarea>
+			<textarea id="message" class="input message" min="18" max="100" placeholder="Введите ваше сообщение"></textarea>
 			<button id="button" class="button">Добавить комментарий</button>
 		
 		</div>
 		<div class="comments" id="comments">
-			<h2>Онлайн чат &#128172;</h2>
-			<div class="comment">
 			</div>
+			</div></div>
 		</div>
      <!-- конец блока Чат-->
 
